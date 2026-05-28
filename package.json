@@ -1,0 +1,31 @@
+{
+  "name": "playwrightproj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "browser": "npx playwright test --headed",
+    "show": "npx playwright test",
+    "ui Test": "npx playwright test --ui",
+    "debugger": "npx playwright test --debug",
+    "api": "npx playwright test tests/api",
+    "api:headed": "npx playwright test tests/api --headed",
+    "codegen": "npx playwright codegen",
+    "reporter": "npx playwright show-report",
+    "secondConfig": "npx playwright test --config=playwright.config1.js",
+    "webkitExecution": "npx playwright test --config=playwright.config1.js --project='webkit Execution'",
+    "chromiumExecution": "npx playwright test --config=playwright.config1.js --project='chromium Execution'",
+    "viewPort": "npx playwright test --config=playwright.config1.js --project='chromium Execution'",
+    "iPhone13Pro": "npx playwright test --config=playwright.config1.js --project='webkit Execution'",
+    "azureServerHeroKuApp": "npx playwright test tests/HerokuApp.spec.js --config=playwright.service.config.js --workers=2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@azure/identity": "^4.13.1",
+    "@azure/playwright": "^1.1.5",
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^22.7.7"
+  }
+}
