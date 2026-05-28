@@ -8,7 +8,7 @@ const clickedCancel = "You clicked: Ok";
 const promptText = "You entered: ";
 //const password = "Learning@830$3mK2"
 
-test.only('Alert Handling - Ok, Ok And Cancel, Prompt', async ({browser})=>{
+test('Alert Handling - Ok, Ok And Cancel, Prompt', async ({browser})=>{
 
 const context = await browser.newContext();
 const page = await context.newPage();
